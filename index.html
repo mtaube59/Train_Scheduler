@@ -15,71 +15,87 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Train Scheduler</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-                </p>
+                <h1 class="display-4">Train Schedule</h1>
             </div>
         </div>
         <div class="card" style="width: 100%;">
             <div class="card-header">
                 Current Train Schedule
             </div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Train Name</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <br>
         <div class="card" style="width: 100%;">
             <div class="card-header">
                 Add Train
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                </div>
-            </form>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="train">Train Name</label>
+                        <input type="text" class="form-control" id="train" placeholder="Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Destination">Destination</label>
+                        <input type="text" class="form-control" id="Destination" placeholder="Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="Time">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="Time" placeholder="00:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="Frequency"> Frequency (min)</label>
+                        <input type="text" class="form-control" id="Frequency" placeholder="Minutes">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script type="text/javascript" src="./assets/javascript/logic.js"></script>
 </body>
 
 </html>

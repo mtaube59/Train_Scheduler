@@ -1,10 +1,10 @@
 .jumbotron {
-    background-color: lightgrey;
+    background-color: lightskyblue;
     text-align: center;
 }
 .card-header {
     background-color: lightskyblue;
 }
 body {
-    background-image: url(./assets/images/train.jpeg)
+    background-image: url("../images/blue.png");
 }
