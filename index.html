@@ -26,42 +26,14 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Train Name</th>
-                            <th scope="col">Destination</th>
-                            <th scope="col">Frequency (min)</th>
-                            <th scope="col">Next Arrival</th>
-                            <th scope="col">Minutes Away</th>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                        </tr>
+                    <tbody id="table">
                     </tbody>
                 </table>
             </div>
@@ -78,24 +50,27 @@
                         <input type="text" class="form-control" id="train" placeholder="Train Name">
                     </div>
                     <div class="form-group">
-                        <label for="Destination">Destination</label>
-                        <input type="text" class="form-control" id="Destination" placeholder="Destination">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
                     </div>
                     <div class="form-group">
-                        <label for="Time">First Train Time (HH:mm - military time)</label>
-                        <input type="text" class="form-control" id="Time" placeholder="00:00">
+                        <label for="time">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="time" placeholder="00:00">
                     </div>
                     <div class="form-group">
-                        <label for="Frequency"> Frequency (min)</label>
-                        <input type="text" class="form-control" id="Frequency" placeholder="Minutes">
+                        <label for="frequency"> Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Minutes">
                     </div>
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" id="add-train" type="submit" value="Submit">
                 </form>
             </div>
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/logic.js"></script>
+    
 </body>
 
 </html>
